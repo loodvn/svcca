@@ -32,7 +32,7 @@ Aside from this main script, implementations of _Partial Least Squares_, [numpy_
 ### Results from the Papers
 
 #### Learning Dynamics
-In both papers, we studied the per-layer learning dynamics: how different layers in a network converge through training. For both convolutional networks and recurrent neural networks, we found that lower layers tend to converge faster than higher layers. This means that not all layers need to be trained all the way through training. We can save ccomputation and prevent overfitting by consecutively freezing layers -- _freeze training_. Preliminary experiments support the effectiveness of freeze training, but there are many open questions (different architectures, varying learning rates) to explore further. 
+In both papers, we studied the per-layer learning dynamics: how different layers in a network converge through training. For both convolutional networks and recurrent neural networks, we found that lower layers tend to converge faster than higher layers. This means that not all layers need to be trained all the way through training. We can save computation and prevent overfitting by consecutively freezing layers -- _freeze training_. Preliminary experiments support the effectiveness of freeze training, but there are many open questions (different architectures, varying learning rates) to explore further. 
 <p align="center">
     <img src="examples/dynamics_plots_crop.png" width=700px>
 </p>
